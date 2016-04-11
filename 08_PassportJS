@@ -1,0 +1,12 @@
+------------passportJS------------
+
+
+
+Passport JS is a library that take care a lot of boiler plate code and makes it easy
+to connect and get authenticated from many big platforms like facebook, google etc. and by doing so
+the server that handles the authentication of the user returns a token for the user to use and
+continue browsing.
+
+
+Unfortunately my demo for this exercise is the simple facebook log-in we did in class.
+look at facebook-login-simple-example in this repository :)

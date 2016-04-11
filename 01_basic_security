@@ -1,0 +1,43 @@
+------- Basic authentication and security ----------
+
+
+1) authentication :
+In simple words, authentication is the process of determining whether someone or something is,
+in fact, who or what it is declared to be. Like in real life when we are asked by the authorities
+to provide an ID is because they want to ensure that we are how we claim to be. The same goes on the web.
+But because the internet is such a big and people want to complete transaction from remote places there is the
+need for some kind of authentication.
+Usually the user provides some credential in a sign-up form that are meant to be the authentication method between
+a user and a service provider (web-site).
+
+2) authorization :
+Once the user is authenticated then some permissions are granted to him to access some content like for example
+his/hers profile or orders if the website is a commerce site. Usually (if not always) there many types of users
+that have different permissions to access segments of a website, normally a user shouldn't be able to add, edit,
+delete other users and if he tries to access a directory or a page that does so he/she should get a 401 error
+mentioning that the user is unauthorized to perform some action.
+
+3) confidentiality :
+Confidentiality is some kind of reassurance that the bridge of communication of sensitive information from the user/client to server
+and vice-versa is safe and no data is leaking, getting "sniffed" or tampered with in between. This is important
+because if username and password are liked then there is a threat that the user on the other end is not the expected one.
+So as a good rule of thumb is to never store passwords in databases to prevent this phenomenon. Instead a hashed value
+(always with the same hashing algorithm)and usually salted (salting a pasword is when we add a long string of
+characters to the password before hashing it) is stored to the database.
+
+4) Integrity :
+Integrity involves maintaining the consistency, accuracy, and trustworthiness of data over its entire life cycle.
+Data must not be changed in transit, and steps must be taken to ensure that data cannot be altered by
+unauthorized people (for example, in a breach of confidentiality).
+Version control maybe used to prevent erroneous changes or accidental deletion by authorized users becoming a problem.
+
+5)Secure Sockets Layer (SSL) & Transport Layer Security (TLS):
+SSL/TSL are cryptographic protocols designed to provide communications security over a computer network.
+These certificates are provides by approved licenced providers that are thoght to be credible and trust worthy.
+A symmetric key exists in both ends of a transaction/communication to ensure that this conversation is private.
+
+Example of usage:
+In the 2nd but basically in the 3rd semester we added authentication in our websites that once a user got authenticated
+and successfully loged in they where granted different permissions.Also we salted passwords and hashing them before
+persisting them in the database. We also prodused SSL certificates on the 3rd semester that allowed us to have a secure
+connection to our localserver... (kinda useless but it was a good demo to understand it).

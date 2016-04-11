@@ -1,0 +1,24 @@
+------------------jwt------------------------
+
+
+Once the authentication is made there is no need to query the database and verify
+credentials every time the user wants to interact with our website. To avoid this kind of hassle
+we use Access-Tokens that allows the user to continue navigating to our website un-bothered and
+safe.
+
+In our case we use JWT which stands for JSON Web Token (JWT) which is an open standard
+(RFC 7519) that defines a compact and self-contained way for securely transmitting information
+between parties as a JSON object.
+
+This JSON object consists of three parts:
+
+1 :  Header which contains the type (typ) that should be JWT and the hashing algorithm (alg)
+2 :  Payload which conains information that need to be transmitted , information about the token
+3 :  Signature which is the heart of the JWT. With this signature we can check if the documents we
+received is the original because the signature is a hashed combination of the two parts above with a secret.
+So if someone tries to change sothing in the middle the hashed value will not match the original one.
+
+Those 3 parts are base64 encoded and they are separated with dots.
+
+Since the application we are building uses javascript that gave birth to JSON and we also use MongoDB which also
+uses JSON as a document model JWT is the perfect fit for us.

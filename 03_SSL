@@ -1,0 +1,17 @@
+----------------SSL-----------------
+
+
+initially the client sties to connect to an ssl environment if it fails it is redirected to the standard http version
+of the website, but is succeeds and a handshake between the client and the server is made then a back an forth communication
+takes place where the server and the client exchange information on what encryption algorithms they support and once they
+find a common ground they can both work with and then the SSL connection is established.
+Again :
+
+1: Handshake and encryption method/algorithm agreement
+2: Server Sends certificate
+3: Client says : Start encrypting
+4: Server says : Start encrypting
+5: all messages are now encrypted
+
+
+After that point they encrypt the data they both send with the same algorithm and decrypt accordingly.

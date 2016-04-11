@@ -1,0 +1,30 @@
+
+--------------Threats-----------------
+
+
+1) Cross-site scripting (XSS) is a type of computer security vulnerability typically found in web applications.
+Cross-site scripting (XSS) is when an attacker manages to inject a script through a form and fool the server/site to execute
+this code giving the attacker endless possibilities to extract valuable data and use them in a malicious way.
+A good practice is to disable remote scripting.
+
+2)  SQL Injection-NoSQL injections
+SQL injection is when a hacker/attacker manages to modify the original query that gets executed in a search field that
+queries the database for example and fool it into returning sensitive information like passwords or other classified
+information.
+
+In NoSQL injections an SQL injection would not work since you can't query a NoSQL database with SQL.But this doesn't solve
+the problem because NoSQL databases are build with programming languages and because they usually manipulate data like
+JSON,XML etc. it is not possible to filter special characters that are used in this types of documents to prevent the injections.
+So sanitizing input from HTML characters is not enough. For example an anonymous block of code ( "{" and "}" ) are the main characters
+of JSON and there are a lot of possibilities to crack the system there. Therefor it always a good idea to check input validation
+both in the client and the server to prevent most of attacks.
+
+3) DOS-attacks:
+
+Also known as denial-of-service attack, is an attack that doesn't try to steal data but disable a service by bombarding a
+server with heavy-weight operations that take a lot of resources with a result to make a website/server unresponsive to
+users. (if interested have a look at Low Orbit Ion Cannon ).
+
+It is not easy to protect your server for those types of attacks because an attacker can generate more traffic that one can
+handle. A way to partially remove this threat would be to stop taking and serving requests from an IP that shows abnormal
+activity and suspicious behaviour.
