@@ -1,0 +1,14 @@
+------------OAuth----------
+
+1) OAuth
+Generally, OAuth provides to clients a "secure delegated access"
+to server resources on behalf of a resource owner. It specifies a
+process for resource owners to authorize third-party access to their
+server resources without sharing their credentials. In other words
+OAuth authorization is a framework that enables a third-party application
+to obtain limited access to an HTTP service to verify a user.
+
+2) OpenID
+OpenID is an open standard and decentralized authentication protocol.
+OpenID allows you to use an existing account to sign in to multiple websites,
+without needing to create new passwords.
